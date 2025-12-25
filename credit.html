@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кредит и лизинг - Premium Cars</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header" id="header"></header>
+
+    <main>
+        <section class="credit-page">
+            <div class="container">
+                <h1 class="page-title">Кредит и лизинг</h1>
+
+                <div class="credit-intro">
+                    <p>Мы предлагаем выгодные условия кредитования и лизинга для покупки автомобиля. Работаем с ведущими банками и лизинговыми компаниями.</p>
+                </div>
+
+                <div class="credit-options">
+                    <div class="credit-card">
+                        <h2>Автокредит</h2>
+                        <div class="credit-features">
+                            <div class="feature">
+                                <span class="feature-label">Ставка от</span>
+                                <span class="feature-value">8.9%</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-label">Срок</span>
+                                <span class="feature-value">до 7 лет</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-label">Первоначальный взнос</span>
+                                <span class="feature-value">от 10%</span>
+                            </div>
+                        </div>
+                        <ul class="credit-benefits">
+                            <li>Быстрое рассмотрение заявки</li>
+                            <li>Минимум документов</li>
+                            <li>Возможность досрочного погашения</li>
+                            <li>Страхование включено</li>
+                        </ul>
+                    </div>
+
+                    <div class="credit-card">
+                        <h2>Лизинг</h2>
+                        <div class="credit-features">
+                            <div class="feature">
+                                <span class="feature-label">Аванс</span>
+                                <span class="feature-value">от 5%</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-label">Срок</span>
+                                <span class="feature-value">до 5 лет</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-label">Выкупная стоимость</span>
+                                <span class="feature-value">от 1%</span>
+                            </div>
+                        </div>
+                        <ul class="credit-benefits">
+                            <li>Налоговые льготы для бизнеса</li>
+                            <li>Гибкий график платежей</li>
+                            <li>Возможность обновления автопарка</li>
+                            <li>Оптимизация налогообложения</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="credit-calculator">
+                    <h2>Калькулятор кредита</h2>
+                    <div class="calculator-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="carPrice">Стоимость автомобиля (₽)</label>
+                                <input type="number" id="carPrice" value="2000000" min="0">
+                            </div>
+                            <div class="form-group">
+                                <label for="initialPayment">Первоначальный взнос (₽)</label>
+                                <input type="number" id="initialPayment" value="200000" min="0">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="creditTerm">Срок кредита (лет)</label>
+                                <input type="number" id="creditTerm" value="5" min="1" max="7">
+                            </div>
+                            <div class="form-group">
+                                <label for="interestRate">Процентная ставка (%)</label>
+                                <input type="number" id="interestRate" value="8.9" min="0" step="0.1">
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" id="calculateCredit">Рассчитать</button>
+                        <div class="calculation-result" id="calculationResult" style="display: none;">
+                            <h3>Результаты расчета</h3>
+                            <div class="result-item">
+                                <span>Сумма кредита:</span>
+                                <span id="creditAmount">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span>Ежемесячный платеж:</span>
+                                <span id="monthlyPayment">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span>Переплата:</span>
+                                <span id="overpayment">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="contact-form-section">
+                    <div class="container">
+                        <h2 class="section-title">Оставить заявку на кредит</h2>
+                        <form class="contact-form" id="creditForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="creditName">Ваше имя *</label>
+                                    <input type="text" id="creditName" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="creditPhone">Телефон *</label>
+                                    <input type="tel" id="creditPhone" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="creditEmail">Email</label>
+                                    <input type="email" id="creditEmail" name="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="creditType">Тип финансирования</label>
+                                    <select id="creditType" name="creditType">
+                                        <option value="credit">Автокредит</option>
+                                        <option value="leasing">Лизинг</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="creditMessage">Дополнительная информация</label>
+                                <textarea id="creditMessage" name="message" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer"></footer>
+
+    <script src="js/components.js"></script>
+    <script src="js/credit.js"></script>
+</body>
+</html>
+

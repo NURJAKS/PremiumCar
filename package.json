@@ -1,0 +1,13 @@
+{
+  "name": "car-site",
+  "version": "1.0.0",
+  "description": "Сайт для продажи автомобилей",
+  "scripts": {
+    "build": "sass css/main.scss css/main.css",
+    "build-css": "sass css/main.scss css/main.css",
+    "watch-css": "sass --watch css/main.scss:css/main.css"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}

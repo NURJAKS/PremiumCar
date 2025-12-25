@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Premium Cars</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header" id="header"></header>
+
+    <main>
+        <section class="contacts-page">
+            <div class="container">
+                <h1 class="page-title">Контакты</h1>
+
+                <div class="contacts-layout">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <h2>Адрес</h2>
+                            <p>г. Москва, ул. Автомобильная, д. 15</p>
+                            <p>Торговый центр "АвтоМолл", 2 этаж</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <h2>Телефоны</h2>
+                            <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                            <p><a href="tel:+74951234568">+7 (495) 123-45-68</a></p>
+                        </div>
+
+                        <div class="contact-card">
+                            <h2>Email</h2>
+                            <p><a href="mailto:info@premiumcars.ru">info@premiumcars.ru</a></p>
+                            <p><a href="mailto:sales@premiumcars.ru">sales@premiumcars.ru</a></p>
+                        </div>
+
+                        <div class="contact-card">
+                            <h2>Режим работы</h2>
+                            <p>Пн-Пт: 9:00 - 20:00</p>
+                            <p>Сб-Вс: 10:00 - 18:00</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <h2>Социальные сети</h2>
+                            <div class="social-links">
+                                <a href="#" class="social-link">VK</a>
+                                <a href="#" class="social-link">Telegram</a>
+                                <a href="#" class="social-link">WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <h2>Обратная связь</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contactName">Ваше имя *</label>
+                                    <input type="text" id="contactName" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactPhone">Телефон *</label>
+                                    <input type="tel" id="contactPhone" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email</label>
+                                <input type="email" id="contactEmail" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject">Тема обращения</label>
+                                <select id="contactSubject" name="subject">
+                                    <option value="">Выберите тему</option>
+                                    <option value="question">Общий вопрос</option>
+                                    <option value="catalog">Вопрос по каталогу</option>
+                                    <option value="service">Вопрос по услугам</option>
+                                    <option value="credit">Вопрос по кредиту</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">Сообщение *</label>
+                                <textarea id="contactMessage" name="message" rows="5" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="agreement" required>
+                                    Я согласен с <a href="policy.html">политикой конфиденциальности</a>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <h2>Как нас найти</h2>
+                    <div class="map-placeholder">
+                        <p>Карта будет здесь</p>
+                        <p>г. Москва, ул. Автомобильная, д. 15</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer"></footer>
+
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
